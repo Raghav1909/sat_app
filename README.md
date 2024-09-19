@@ -65,28 +65,39 @@ This will generate the `sat-cli` binary.
 
 ### CLI Commands
 
-1. **Add a student**:
+1. **Help - To list all commands**:
+
+   ```bash
+   ./sat-cli help
+   ```
+
+2. **Add a student**:
 
    ```bash
    ./sat-cli create
    ```
 
-2. **List all students**:
+3. **List all students**:
 
    ```bash
    ./sat-cli list
    ```
 
-3. **Update a student's SAT score**:
+4. **Update a student's SAT score**:
 
    ```bash
    ./sat-cli update --name="John Doe"
    ```
 
-4. **Delete a student**:
+5. **Delete a student**:
 
    ```bash
    ./sat-cli delete --name="John Doe"
+   ```
+6. **Get Rank**:
+
+   ```bash
+   ./sat-cli rank --name="John Doe"
    ```
 ## Database Management
 
