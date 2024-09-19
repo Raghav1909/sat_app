@@ -1,13 +1,12 @@
 # Precize Golang Assignment
 
-This project contains both a **CLI** and **Web Application** built with Golang. It manages student records with functionality to add, update, delete, and retrieve student data from an SQLite database. The project uses `sqlc` for SQL query generation and `goose` for database migrations.
+This project contains a **CLI** built with Golang. It manages student records with functionality to add, update, delete, and retrieve student data from an SQLite database. The project uses `sqlc` for SQL query generation and `goose` for database migrations.
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
   - [CLI Commands](#cli-commands)
-  - [Web App](#web-app)
 - [Database Management](#database-management)
 - [Makefile Commands](#makefile-commands)
 
@@ -83,23 +82,6 @@ This will generate the `sat-cli` binary.
    ```bash
    ./sat-cli delete --name="John Doe"
    ```
-
-### Web App
-
-You can run the web app by navigating to the `cmd/web` directory and running:
-
-```bash
-go run main.go
-```
-
-Once the web server is running, open a browser and navigate to:
-
-```
-http://localhost:8080
-```
-
-The web app provides a user interface to manage student records, including viewing, creating, updating, and deleting records.
-
 ## Database Management
 
 The project uses SQLite as the database, and `goose` is used for managing database migrations. Migrations are stored in the `db/migrations` directory.
