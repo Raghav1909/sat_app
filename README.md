@@ -35,6 +35,12 @@ Ensure you have Golang and the following tools installed:
   go install github.com/kyleconroy/sqlc/cmd/sqlc
   ```
 
+- **Other Go Dependencies**:
+
+  ```bash
+  go mod tidy
+  ```
+
 ### 3. Set up the Database
 
 Run the following command to create and apply all migrations:
